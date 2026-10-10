@@ -1,0 +1,26 @@
+{
+  "name": "payal-fashion-design",
+  "version": "2.0.0",
+  "description": "Payal Fashion Design - Full-Stack E-Commerce Boutique & Custom Stitching Atelier",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "create-admin": "cd server && npm run create-admin",
+    "test": "cd server && npm run test",
+    "load-test": "cd server && npm run load-test",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "indian-ethnic-wear",
+    "boutique",
+    "ecommerce",
+    "react",
+    "express",
+    "mongodb",
+    "razorpay"
+  ],
+  "author": "Payal Fashion Design",
+  "license": "ISC"
+}

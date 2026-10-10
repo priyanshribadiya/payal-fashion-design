@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payal Fashion Design | Premium Indian Ethnic Wear & Custom Stitching</title>
+  <meta name="description" content="Payal Fashion Design - Bespoke custom dress designing, precision tailoring & stitching, and ready-made Indian ethnic wear, sarees, lehengas, and designer blouses.">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Immediate Image Fallback Handler (Resilient if offline or image 404s) -->
+  <script>
+    function handleImageFallback(img) {
+      if (!img || img.dataset.fallbackApplied) return;
+      img.dataset.fallbackApplied = 'true';
+      const categoryName = img.dataset.fallbackCategory || 'Ethnic Fashion';
+      const parent = img.parentElement;
+      if (parent) {
+        const fallbackBox = document.createElement('div');
+        fallbackBox.className = 'image-fallback-placeholder';
+        fallbackBox.innerHTML = `
+          <div class="fb-icon" aria-hidden="true">✦</div>
+          <div class="fb-title">${categoryName}</div>
+          <div class="fb-sub">Payal Fashion Design</div>
+        `;
+        img.style.display = 'none';
+        parent.appendChild(fallbackBox);
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span class="announcement-icon" aria-hidden="true">✦</span>
+      <p class="announcement-text">
+        Bespoke Tailoring & Designer Ethnic Wear • Enquire via WhatsApp for custom fittings
+      </p>
+      <span class="announcement-icon" aria-hidden="true">✦</span>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo / Monogram -->
+      <a href="#home" class="brand-logo" aria-label="Payal Fashion Design - Home">
+        <span class="brand-monogram" aria-hidden="true">P</span>
+        <div class="brand-text">
+          <span class="brand-name">Payal</span>
+          <span class="brand-tagline">Fashion Design</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="#ready-to-wear" class="nav-link">Ready to Wear</a></li>
+          <li class="nav-item"><a href="#custom-design" class="nav-link">Custom Stitching</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link">How to Order</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action (WhatsApp CTA & Mobile Toggle) -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-whatsapp-header" data-whatsapp-action="general" aria-label="Enquire on WhatsApp">
+          <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+          </svg>
+          <span class="btn-text">Enquire on WhatsApp</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <div class="brand-text">
+          <span class="brand-name">Payal</span>
+          <span class="brand-tagline">Fashion Design</span>
+        </div>
+        <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#collections" class="mobile-nav-link">Collections</a></li>
+        <li><a href="#ready-to-wear" class="mobile-nav-link">Ready to Wear</a></li>
+        <li><a href="#custom-design" class="mobile-nav-link">Custom Stitching</a></li>
+        <li><a href="#how-it-works" class="mobile-nav-link">How to Order</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button type="button" class="btn btn-primary w-full" data-whatsapp-action="general">
+          <span>Chat on WhatsApp</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Backdrop -->
+    <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="gold-sparkle" aria-hidden="true">✦</span>
+            <span class="eyebrow-text">DESIGNED WITH ELEGANCE</span>
+            <span class="gold-sparkle" aria-hidden="true">✦</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Your Style, <span class="highlight-title">Your Story</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover beautiful ready-made styles and personalised designs crafted around you. From royal wedding lehengas and hand-finished sarees to bespoke designer blouses and everyday chic kurtis.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#collections" class="btn btn-primary">
+              <span>Explore Collection</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#custom-design" class="btn btn-secondary">
+              <span>Design Your Outfit</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges / USPs -->
+          <div class="hero-features">
+            <div class="feature-item">
+              <span class="feature-bullet">◆</span>
+              <span>Custom Tailored Fit</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">◆</span>
+              <span>Finest Ethnic Fabrics</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">◆</span>
+              <span>Intricate Hand Embroidery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <div class="image-wrapper hero-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80" 
+                alt="Indian fashion model dressed in elegant ethnic attire by Payal Fashion Design"
+                class="hero-image"
+                loading="eager"
+                data-fallback-category="Ethnic Couture"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="hero-floating-badge" aria-hidden="true">
+              <div class="floating-badge-icon">✂</div>
+              <div class="floating-badge-text">
+                <strong>Custom Stitching</strong>
+                <span>Made to your measurements</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Collections Section -->
+    <section class="collections-section section-padding" id="collections" aria-labelledby="collections-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">CURATED ETHNIC WARDROBE</span>
+          <h2 class="section-title" id="collections-heading">Our Signature Collections</h2>
+          <div class="section-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <span class="diamond">◆</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            Explore our handcrafted categories created with timeless silhouettes, rich textures, and contemporary detailing.
+          </p>
+        </div>
+
+        <div class="collections-grid">
+          
+          <!-- Collection 1: Designer Kurtis -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80" 
+                alt="Designer Kurtis Collection" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Designer Kurtis"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Daily & Festive</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Designer Kurtis</h3>
+              <p class="collection-desc">
+                From breathable cottons to opulent silk kurtis, tailored for festive gatherings and elevated everyday grace.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Kurtis">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Collection 2: Sarees -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80" 
+                alt="Traditional and Contemporary Sarees Collection" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Sarees"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Heritage Drapes</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Sarees</h3>
+              <p class="collection-desc">
+                Banarasi silks, tissue drapes, organzas, and georgettes woven with grace and regal heritage borders.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Sarees">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Collection 3: Lehengas -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" 
+                alt="Bridal and Festive Lehengas" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Lehengas"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Bridal & Grand</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Lehengas</h3>
+              <p class="collection-desc">
+                Stunning flared lehengas embellished with zardozi, sequins, and resham threadwork made for unforgettable moments.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Lehengas">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Collection 4: Salwar Suits -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80" 
+                alt="Salwar Suits & Anarkalis Collection" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Salwar Suits"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Classic Sets</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Salwar Suits</h3>
+              <p class="collection-desc">
+                Anarkalis, straight-cut suits, and palazzo sets tailored with fine dupattas and flattering silhouettes.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Salwar Suits">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Collection 5: Designer Blouses -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80" 
+                alt="Designer Blouses & Hand Embroidered Necklines" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Designer Blouses"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Bespoke Cuts</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Designer Blouses</h3>
+              <p class="collection-desc">
+                Maggam work, intricate back necklines, padded cups, and prince-cut finishes customized to your saree palette.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Blouses">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Collection 6: Festive & Party Wear -->
+          <article class="collection-card">
+            <div class="collection-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80" 
+                alt="Festive and Party Wear Ethnic Apparel" 
+                class="collection-img"
+                loading="lazy"
+                data-fallback-category="Festive Wear"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="collection-overlay">
+                <span class="collection-tag">Celebrations</span>
+              </div>
+            </div>
+            <div class="collection-content">
+              <h3 class="collection-name">Festive & Party Wear</h3>
+              <p class="collection-desc">
+                Fusion draped gowns, peplum sharara sets, and festive coordinate ensembles that radiate celebration sparkle.
+              </p>
+              <button type="button" class="btn btn-outline collection-action" data-filter-target="Festive Wear">
+                <span>Explore Designs</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Ready-Made Clothing Gallery -->
+    <section class="gallery-section section-padding bg-ivory" id="ready-to-wear" aria-labelledby="gallery-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">READY TO WEAR STYLES</span>
+          <h2 class="section-title" id="gallery-heading">Featured Showcase</h2>
+          <div class="section-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <span class="diamond">◆</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            Sample boutique designs and ready silhouettes. Filter by category and enquire directly on WhatsApp with your favorite piece.
+          </p>
+
+          <!-- Illustrative Pricing Notice -->
+          <div class="pricing-disclaimer-pill" role="note">
+            <span class="info-icon" aria-hidden="true">ℹ</span>
+            <span>All listed prices are <strong>illustrative sample prices</strong> for demonstration. Real prices are confirmed based on fabric choice and bespoke sizing.</span>
+          </div>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="filter-bar" role="tablist" aria-label="Filter products by category">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Designs</button>
+          <button type="button" class="filter-btn" data-filter="Kurtis" role="tab" aria-selected="false">Kurtis</button>
+          <button type="button" class="filter-btn" data-filter="Sarees" role="tab" aria-selected="false">Sarees</button>
+          <button type="button" class="filter-btn" data-filter="Lehengas" role="tab" aria-selected="false">Lehengas</button>
+          <button type="button" class="filter-btn" data-filter="Salwar Suits" role="tab" aria-selected="false">Salwar Suits</button>
+          <button type="button" class="filter-btn" data-filter="Blouses" role="tab" aria-selected="false">Blouses</button>
+          <button type="button" class="filter-btn" data-filter="Festive Wear" role="tab" aria-selected="false">Festive Wear</button>
+        </div>
+
+        <!-- Products Grid (At least 8 items) -->
+        <div class="products-grid" id="products-grid">
+          
+          <!-- Product 1 -->
+          <article class="product-card" data-category="Kurtis">
+            <div class="product-img-box">
+              <span class="product-badge">Kurti</span>
+              <img 
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80" 
+                alt="Embroidered Chanderi Straight Kurti Set" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Kurtis"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Designer Kurtis</div>
+              <h3 class="product-title">Embroidered Chanderi Kurti Set</h3>
+              <p class="product-blurb">Fine resham threadwork detailing with side slits and organza cuff styling.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹2,850*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Embroidered Chanderi Kurti Set"
+                aria-label="Enquire about Embroidered Chanderi Kurti Set on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="Sarees">
+            <div class="product-img-box">
+              <span class="product-badge">Saree</span>
+              <img 
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" 
+                alt="Banarasi Katan Silk Heritage Saree" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Sarees"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Sarees</div>
+              <h3 class="product-title">Royal Burgundy Banarasi Saree</h3>
+              <p class="product-blurb">Woven zari jaal motifs, heavy pallu, and an unstitched contrast designer blouse piece.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹6,900*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Royal Burgundy Banarasi Saree"
+                aria-label="Enquire about Royal Burgundy Banarasi Saree on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="Lehengas">
+            <div class="product-img-box">
+              <span class="product-badge">Lehenga</span>
+              <img 
+                src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=700&q=80" 
+                alt="Pastel Flora Georgette Flared Lehenga" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Lehengas"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Lehengas</div>
+              <h3 class="product-title">Floral Georgette Flared Lehenga</h3>
+              <p class="product-blurb">Subtle mirror accents, multi-paneled kali flare, and scalloped border dupatta.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹14,500*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Floral Georgette Flared Lehenga"
+                aria-label="Enquire about Floral Georgette Flared Lehenga on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="Salwar Suits">
+            <div class="product-img-box">
+              <span class="product-badge">Salwar Suit</span>
+              <img 
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80" 
+                alt="Pleated Silk Anarkali Suit Set with Banarasi Dupatta" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Salwar Suits"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Salwar Suits</div>
+              <h3 class="product-title">Raw Silk Anarkali Suit Set</h3>
+              <p class="product-blurb">Full-length flare Anarkali kurta paired with churidar and hand-woven Banarasi dupatta.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹5,400*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Raw Silk Anarkali Suit Set"
+                aria-label="Enquire about Raw Silk Anarkali Suit Set on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card" data-category="Blouses">
+            <div class="product-img-box">
+              <span class="product-badge">Blouse</span>
+              <img 
+                src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=700&q=80" 
+                alt="Handcrafted Aari Work Designer Silk Blouse" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Blouses"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Designer Blouses</div>
+              <h3 class="product-title">Aari Work Bridal Silk Blouse</h3>
+              <p class="product-blurb">Intricate beadwork neckline, elbow sleeves, and custom deep back tying dori.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹3,200*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Aari Work Bridal Silk Blouse"
+                aria-label="Enquire about Aari Work Bridal Silk Blouse on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card" data-category="Festive Wear">
+            <div class="product-img-box">
+              <span class="product-badge">Festive</span>
+              <img 
+                src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=700&q=80" 
+                alt="Sequinned Sharara Festive Ensemble" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Festive Wear"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Festive Wear</div>
+              <h3 class="product-title">Sequinned Sharara Party Ensemble</h3>
+              <p class="product-blurb">Short flared peplum kurti paired with tier-layered georgette sharara bottoms.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹4,950*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Sequinned Sharara Party Ensemble"
+                aria-label="Enquire about Sequinned Sharara Party Ensemble on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card" data-category="Kurtis">
+            <div class="product-img-box">
+              <span class="product-badge">Kurti</span>
+              <img 
+                src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=700&q=80" 
+                alt="Angrakha Style Festive Tunic" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Kurtis"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Designer Kurtis</div>
+              <h3 class="product-title">Angrakha Tussar Silk Kurti</h3>
+              <p class="product-blurb">Overlap wrap design with handcrafted latkan tassels and hand-printed motifs.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹3,450*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Angrakha Tussar Silk Kurti"
+                aria-label="Enquire about Angrakha Tussar Silk Kurti on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card" data-category="Salwar Suits">
+            <div class="product-img-box">
+              <span class="product-badge">Salwar Suit</span>
+              <img 
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" 
+                alt="Palazzo Suit Set in Georgette" 
+                class="product-img"
+                loading="lazy"
+                data-fallback-category="Salwar Suits"
+                onerror="handleImageFallback(this)"
+              >
+            </div>
+            <div class="product-details">
+              <div class="product-category-name">Salwar Suits</div>
+              <h3 class="product-title">Pastel Zari Palazzo Suit</h3>
+              <p class="product-blurb">Straight hemline with zari cut-work sleeves and comfortable wide-leg flared palazzos.</p>
+              
+              <div class="product-meta">
+                <div class="sample-price-wrapper">
+                  <span class="sample-price-label">Sample Price:</span>
+                  <span class="sample-price-value">₹4,200*</span>
+                </div>
+              </div>
+
+              <button 
+                type="button" 
+                class="btn btn-whatsapp-product" 
+                data-whatsapp-product="Pastel Zari Palazzo Suit"
+                aria-label="Enquire about Pastel Zari Palazzo Suit on WhatsApp"
+              >
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Note below grid -->
+        <p class="catalog-note text-center">
+          * Prices displayed are for reference only. Please message us on WhatsApp with the design name to verify current fabric availability, color customisations, and exact pricing for your measurements.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- Custom Design and Stitching Section -->
+    <section class="custom-design-section section-padding" id="custom-design" aria-labelledby="custom-heading">
+      <div class="container">
+        
+        <div class="custom-design-wrapper">
+          
+          <div class="custom-design-content">
+            <span class="section-subtitle">BESPOKE ATELIER</span>
+            <h2 class="section-title" id="custom-heading">Custom Design & Precision Stitching</h2>
+            <div class="section-ornament" aria-hidden="true">
+              <span class="line"></span>
+              <span class="diamond">◆</span>
+              <span class="line"></span>
+            </div>
+            
+            <p class="custom-intro">
+              Have a dream design saved on Pinterest or Instagram? Or looking for an impeccable custom fit for your festive occasion? We provide personalized pattern making, tailoring, and embroidery services crafted around your unique measurements.
+            </p>
+
+            <!-- 5 Core Services List -->
+            <div class="services-list">
+              
+              <div class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                    <circle cx="6" cy="6" r="3"/>
+                    <circle cx="6" cy="18" r="3"/>
+                    <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                    <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                    <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-title">Personalised Outfit Design</h3>
+                  <p class="service-text">Custom tailored bridal lehengas, reception gowns, and festive coordination styled to your vision.</p>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                    <path d="M21.3 8.7l-6-6a1 1 0 0 0-1.4 0l-11 11a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0l11-11a1 1 0 0 0 0-1.4z"/>
+                    <path d="M7.5 10.5l2 2"/>
+                    <path d="M10.5 7.5l2 2"/>
+                    <path d="M13.5 4.5l2 2"/>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-title">Stitching & Custom Fitting</h3>
+                  <p class="service-text">Flawless stitching for suits, anarkalis, and kurtis with personalized armhole, bust, and flare adjustments.</p>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-title">Blouse Design & Embroidery</h3>
+                  <p class="service-text">Intricate back neck cuts, Maggam and Aari embroidery, piping, padded cups, and designer sleeve patterns.</p>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-title">Occasion & Festive Outfits</h3>
+                  <p class="service-text">Curated outfits for weddings, sangeet, mehendi, festivals, family ceremonies, and cocktail evenings.</p>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-title">Fabric & Style Consultation</h3>
+                  <p class="service-text">Guidance on selecting the right silk, organza, crepe, or velvet fabrics and silhouettes suited to your taste.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Custom Design Actions -->
+            <div class="custom-actions">
+              <button type="button" class="btn btn-primary" id="open-custom-helper-btn">
+                <span>Request a Custom Design</span>
+                <span class="btn-sparkle" aria-hidden="true">✨</span>
+              </button>
+              <button type="button" class="btn btn-whatsapp-direct" data-whatsapp-action="custom-direct">
+                <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+                </svg>
+                <span>Quick WhatsApp Message</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Custom Design Visual Showcase Card -->
+          <div class="custom-design-visual">
+            <div class="custom-card-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=900&q=80" 
+                alt="Custom tailoring process and bespoke fitting at Payal Fashion Design"
+                class="custom-showcase-img"
+                loading="lazy"
+                data-fallback-category="Custom Stitching"
+                onerror="handleImageFallback(this)"
+              >
+              
+              <div class="custom-card-overlay-box">
+                <div class="overlay-quote-mark">“</div>
+                <p class="overlay-quote-text">
+                  Every stitch is thoughtfully placed to honor your posture, personal comfort, and celebration aesthetic.
+                </p>
+                <span class="overlay-quote-author">— The Atelier, Payal Fashion Design</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- How Ordering Works Section -->
+    <section class="ordering-section section-padding bg-ivory" id="how-it-works" aria-labelledby="ordering-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">SIMPLE & PERSONALIZED</span>
+          <h2 class="section-title" id="ordering-heading">How Ordering Works</h2>
+          <div class="section-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <span class="diamond">◆</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            Getting your dream outfit is smooth and transparent. Three simple steps connecting you directly with our atelier.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Explore the Collection</h3>
+            <p class="step-text">
+              Browse our ready-made styles above or gather your own outfit photos and ideas from Pinterest, weddings, or magazines.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <path d="M12 20h9"/>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Choose or Describe</h3>
+            <p class="step-text">
+              Select your favorite design or tell us your custom requirements: outfit type, fabric preference, measurements, and target date.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Connect on WhatsApp</h3>
+            <p class="step-text">
+              Chat directly with Payal Fashion Design to confirm price, measurements, production timeline, and pickup or delivery details.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="ordering-clarification">
+          <p>
+            <strong>Note on payments:</strong> We do not take automated online card payments on this website. All price confirmations, measurement consultations, and orders are finalized directly with the boutique owner on WhatsApp or in person.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <div class="about-visual">
+            <div class="about-image-stack">
+              <img 
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80" 
+                alt="Payal Fashion Design craftsmanship and fabric details"
+                class="about-img-main"
+                loading="lazy"
+                data-fallback-category="Atelier Craft"
+                onerror="handleImageFallback(this)"
+              >
+              <div class="about-stamp" aria-hidden="true">
+                <span class="stamp-icon">✦</span>
+                <span class="stamp-text">PAYAL FASHION DESIGN</span>
+                <span class="stamp-sub">HANDCRAFTED</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-subtitle">OUR ATELIER STORY</span>
+            <h2 class="section-title" id="about-heading">Artisanal Craft & Individual Style</h2>
+            <div class="section-ornament" aria-hidden="true">
+              <span class="line"></span>
+              <span class="diamond">◆</span>
+              <span class="line"></span>
+            </div>
+
+            <p class="about-lead">
+              At <strong>Payal Fashion Design</strong>, we believe every piece of clothing should tell a story of grace, individuality, and confidence.
+            </p>
+
+            <p class="about-paragraph">
+              Born from a genuine passion for Indian ethnic textiles, flattering silhouettes, and meticulous stitching, our boutique serves women who appreciate timeless craftsmanship. Whether creating a customized wedding lehenga, designing a blouse that elevates a family heirloom saree, or tailoring everyday kurtis with immaculate finishes, our approach is centered around you.
+            </p>
+
+            <div class="about-values-grid">
+              <div class="about-val-box">
+                <div class="val-header">
+                  <span class="val-icon">✓</span>
+                  <h4>Individual Attention</h4>
+                </div>
+                <p>We listen closely to your styling preferences, event theme, and comfort priorities.</p>
+              </div>
+
+              <div class="about-val-box">
+                <div class="val-header">
+                  <span class="val-icon">✓</span>
+                  <h4>Meticulous Detailing</h4>
+                </div>
+                <p>From seam allowances to embroidery placements, every detail is treated with care.</p>
+              </div>
+            </div>
+
+            <div class="about-placeholder-note">
+              <p>
+                <strong>Boutique Note:</strong> <em>[Editable: Payal Fashion Design is welcoming clients for custom consultations, stitching appointments, and ready collections. Update this section in index.html with your boutique's exact founding year, personal story, and atelier address.]</em>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding bg-ivory" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">WE'D LOVE TO HEAR FROM YOU</span>
+          <h2 class="section-title" id="contact-heading">Get in Touch</h2>
+          <div class="section-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <span class="diamond">◆</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            Have questions about a design, custom stitching, or fabric options? Message us on WhatsApp or connect on social media.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          
+          <!-- Contact Card 1: WhatsApp -->
+          <div class="contact-card highlight-card">
+            <div class="contact-card-icon whatsapp-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">WhatsApp Chat</h3>
+            <p class="contact-card-text">Direct line for price quotes, fitting appointments, and custom tailoring questions.</p>
+            <button type="button" class="btn btn-primary" data-whatsapp-action="general">
+              <span>Start WhatsApp Chat</span>
+            </button>
+            <span class="contact-subtext">Phone: <span class="contact-badge" id="contact-phone-display">+91 97238 14909</span></span>
+          </div>
+
+          <!-- Contact Card 2: Instagram -->
+          <div class="contact-card">
+            <div class="contact-card-icon instagram-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Instagram</h3>
+            <p class="contact-card-text">Follow our latest design drops, real client styling, behind the scenes, and customer reels.</p>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="instagram-link">
+              <span>Visit Instagram</span>
+            </a>
+            <span class="contact-subtext">Handle: <span class="placeholder-badge" id="contact-insta-display">@payalfashiondesign</span></span>
+          </div>
+
+          <!-- Contact Card 3: Boutique Location -->
+          <div class="contact-card">
+            <div class="contact-card-icon location-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Boutique Atelier</h3>
+            <p class="contact-card-text">Visit us for physical fabric selections, trial fittings, and personal consultations.</p>
+            <div class="location-box">
+              <p class="location-address">
+                <em>[Boutique Address Placeholder: Main Road / Market Area, City, State, PIN]</em>
+              </p>
+            </div>
+            <span class="contact-subtext">Appointments recommended</span>
+          </div>
+
+          <!-- Contact Card 4: Hours -->
+          <div class="contact-card">
+            <div class="contact-card-icon hours-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Operating Hours</h3>
+            <p class="contact-card-text">We are available for consultations during the following hours:</p>
+            <div class="hours-box">
+              <p><strong>Mon – Sat:</strong> 10:30 AM – 8:00 PM</p>
+              <p><strong>Sunday:</strong> By Prior Appointment</p>
+            </div>
+            <span class="contact-subtext">WhatsApp replies usually within a few hours</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="brand-monogram" aria-hidden="true">P</span>
+          <div class="brand-text">
+            <span class="brand-name">Payal</span>
+            <span class="brand-tagline">Fashion Design</span>
+          </div>
+        </a>
+        <p class="footer-description">
+          Premium Indian ethnic boutique offering bespoke custom tailoring, blouses, sarees, lehengas, and curated ready-made fashion.
+        </p>
+        <div class="footer-badge-item">
+          <span>✨ Craftsmanship with Care</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#ready-to-wear" data-filter-target="Kurtis">Designer Kurtis</a></li>
+          <li><a href="#ready-to-wear" data-filter-target="Sarees">Sarees & Drapes</a></li>
+          <li><a href="#ready-to-wear" data-filter-target="Lehengas">Wedding Lehengas</a></li>
+          <li><a href="#ready-to-wear" data-filter-target="Salwar Suits">Salwar Suits</a></li>
+          <li><a href="#ready-to-wear" data-filter-target="Blouses">Designer Blouses</a></li>
+          <li><a href="#ready-to-wear" data-filter-target="Festive Wear">Festive Ensembles</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collections">Featured Collections</a></li>
+          <li><a href="#custom-design">Custom Stitching Service</a></li>
+          <li><a href="#how-it-works">How Ordering Works</a></li>
+          <li><a href="#about">About Our Atelier</a></li>
+          <li><a href="#contact">Contact & Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">WhatsApp Direct</h4>
+        <p class="footer-direct-text">
+          Reach out anytime with your dream design picture or measurement queries.
+        </p>
+        <button type="button" class="btn btn-whatsapp-footer" data-whatsapp-action="general">
+          <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Payal Fashion Design. All rights reserved.
+        </p>
+        <p class="sample-notice-text">
+          All images and sample prices are for demonstration purposes. Not an e-commerce shopping cart.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- MODAL 1: WhatsApp Configuration Help Dialog -->
+  <!-- Displayed when WhatsApp number is still the placeholder 91XXXXXXXXXX to avoid broken links -->
+  <div class="modal-backdrop" id="whatsapp-setup-modal" role="dialog" aria-modal="true" aria-labelledby="modal-setup-title" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge-icon">⚙️</span>
+          <h3 class="modal-title" id="modal-setup-title">WhatsApp Setup Needed</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-setup-close" aria-label="Close dialog">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p class="modal-lead">
+          The business WhatsApp phone number is currently set to the default placeholder:
+        </p>
+        
+        <div class="code-box">
+          <code>919723814909</code>
+        </div>
+
+        <p class="modal-instructions">
+          To connect real customers to your phone, open <strong>script.js</strong> in your project and update the <code>whatsappNumber</code> line at the top:
+        </p>
+
+        <div class="code-snippet-preview">
+          <code><span class="code-comment">// In script.js:</span><br>const CONFIG = {<br>&nbsp;&nbsp;whatsappNumber: <span class="code-string">'919876543210'</span>, <span class="code-comment">// Your country code + 10 digits</span><br>};</code>
+        </div>
+
+        <div class="modal-message-preview">
+          <strong>Your customer's intended message was:</strong>
+          <blockquote class="preview-quote" id="modal-preview-message">
+            "Hello Payal Fashion Design, I would like to enquire about your designs..."
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modal-setup-dismiss">Understood</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL 2: Interactive Custom Design Enquiry Helper -->
+  <!-- Allows customers to customize their design request before opening WhatsApp -->
+  <div class="modal-backdrop" id="custom-enquiry-modal" role="dialog" aria-modal="true" aria-labelledby="custom-modal-title" aria-hidden="true">
+    <div class="modal-card modal-custom-form-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge-icon">✂️</span>
+          <h3 class="modal-title" id="custom-modal-title">Custom Design Enquiry</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="custom-modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-form-intro">
+          Fill in a few details and we will pre-format your WhatsApp message with your exact preferences.
+        </p>
+
+        <form id="custom-enquiry-form">
+          <div class="form-group">
+            <label for="form-outfit-type">Outfit Type</label>
+            <select id="form-outfit-type" class="form-input" required>
+              <option value="Bridal / Wedding Lehenga">Bridal / Wedding Lehenga</option>
+              <option value="Designer Blouse & Maggam Work">Designer Blouse & Maggam Work</option>
+              <option value="Salwar Suit / Anarkali">Salwar Suit / Anarkali</option>
+              <option value="Festive Kurti Set">Festive Kurti Set</option>
+              <option value="Indo-Western / Gown">Indo-Western / Gown</option>
+              <option value="Other Custom Stitching">Other Custom Stitching</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-design-notes">Preferred Design / Fabric Notes</label>
+            <textarea id="form-design-notes" class="form-input form-textarea" rows="2" placeholder="e.g. Deep back neckline with zari borders, organza fabric, pastel pink..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="form-size">Size / Measurements</label>
+              <select id="form-size" class="form-input">
+                <option value="Custom Body Measurements">Custom Measurements</option>
+                <option value="Standard S (Bust 34)">Standard S (Bust 34)</option>
+                <option value="Standard M (Bust 36)">Standard M (Bust 36)</option>
+                <option value="Standard L (Bust 38)">Standard L (Bust 38)</option>
+                <option value="Standard XL (Bust 40)">Standard XL (Bust 40)</option>
+                <option value="Need Consultation">Need Fitting Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group col-half">
+              <label for="form-budget">Approx. Budget</label>
+              <select id="form-budget" class="form-input">
+                <option value="Under ₹3,000">Under ₹3,000</option>
+                <option value="₹3,000 - ₹7,000">₹3,000 - ₹7,000</option>
+                <option value="₹7,000 - ₹15,000">₹7,000 - ₹15,000</option>
+                <option value="₹15,000+ (Bridal / Heavy)">₹15,000+ (Bridal / Heavy)</option>
+                <option value="To be discussed">To be discussed</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-date">Needed By (Event Date / Timeline)</label>
+            <input type="text" id="form-date" class="form-input" placeholder="e.g. In 2 weeks / Next month for wedding">
+          </div>
+
+          <div class="modal-form-actions">
+            <button type="submit" class="btn btn-primary w-full">
+              <svg class="icon whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.414z"/>
+              </svg>
+              <span>Continue to WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
